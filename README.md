@@ -1,4 +1,7 @@
 # Marlin 3D Printer Firmware
+## Ender 3 - BigTree SKR 1.3 Configuration
+
+This is the stock Marlin firmware preconfigured for an Ender 3 with an SKR 1.3 board. Most values are direct from the original Ender 3 firmware. It assumes that you are using 4 TMC2208 drivers in UART mode (requires soldering pads). Differing configurations should require minor modification to the X_DRIVER_TYPE, Y_DRIVER_TYPE, Z_DRIVER_TYPE, E0_DRIVER_TYPE values in Configuration.h.
 
 [![Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg?branch=bugfix-2.0.x)](https://travis-ci.org/MarlinFirmware/Marlin)
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
