@@ -1,7 +1,13 @@
-# Marlin 3D Printer Firmware
 ## Ender 3 - BigTree SKR 1.3 Configuration
 
-This is the stock Marlin firmware preconfigured for an Ender 3 with an SKR 1.3 board. Most values are direct from the original Ender 3 firmware. It assumes that you are using 4 TMC2208 drivers in UART mode (requires soldering pads). Differing configurations should require minor modification to the X_DRIVER_TYPE, Y_DRIVER_TYPE, Z_DRIVER_TYPE, E0_DRIVER_TYPE values in Configuration.h.
+This is the stock Marlin firmware preconfigured for an Ender 3 with an SKR 1.3 board. Most values are direct from the original Ender 3 firmware. Here are things you should know about this configuration:
+-  This firmware assumes that you are using 4 TMC2208 drivers in UART mode (requires soldering pads). Differing configurations will require minor modification to the X_DRIVER_TYPE, Y_DRIVER_TYPE, Z_DRIVER_TYPE, E0_DRIVER_TYPE values in Configuration.h.
+- You have stock hotend/extruder/homing. No BLTouch or EZABL enabled.
+- The hotend and bed have been PID tuned for the Ender hardware. It is however highly recommended to tune the bed yourself by running: M303 E-1 S60 C8 U
+- S-curve acceleration was turned on to smooth movement. This should provide a minor improvement to print quality.
+- TMC debugging commands, PID tuning menus, and a few other small tweaks that don't affect prints were enabled.
+---
+# Marlin 3D Printer Firmware
 
 [![Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg?branch=bugfix-2.0.x)](https://travis-ci.org/MarlinFirmware/Marlin)
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
