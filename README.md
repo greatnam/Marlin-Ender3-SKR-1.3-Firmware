@@ -6,6 +6,10 @@ This is the stock Marlin firmware preconfigured for an Ender 3 with an SKR 1.3 b
 - The hotend and bed have been PID tuned for the Ender hardware. It is however highly recommended to tune the bed yourself by running: M303 E-1 S60 C8 U
 - S-curve acceleration was turned on to smooth movement. This should provide a minor improvement to print quality.
 - TMC debugging commands, PID tuning menus, and a few other small tweaks that don't affect prints were enabled.
+
+Just want the firmware and don't want to have to install anything? [Download it here.](https://github.com/thatguyyoulove/Marlin-Ender3-SKR-1.3-Firmware/releases)
+
+Note: If you have any errors about your TMCStepper library version after updating this firmware then delete the .piolibdeps folder. It will get rebuilt on the next build with the newest TMCSteeper library version.
 ---
 # Marlin 3D Printer Firmware
 
