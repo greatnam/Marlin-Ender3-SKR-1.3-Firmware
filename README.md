@@ -9,7 +9,7 @@ This is the stock Marlin firmware preconfigured for an Ender 3 with an SKR 1.3 b
 
 Just want the firmware and don't want to have to install anything? [Download it here.](https://github.com/thatguyyoulove/Marlin-Ender3-SKR-1.3-Firmware/releases)
 
-Note: If you have any errors about your TMCStepper library version after updating this firmware then delete the .piolibdeps folder. It will get rebuilt on the next build with the newest TMCSteeper library version.
+Note: If you have any errors about your TMCStepper library version after updating this firmware then delete the .piolibdeps folder. It will get rebuilt on the next build with the newest TMCStepper library version.
 ---
 # Marlin 3D Printer Firmware
 
